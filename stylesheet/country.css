@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+}
+#result{
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+button:hover{
+    outline: solid 2px #003049 ;
+}
+.countryShow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    margin: 22px 0px;
+}
+img{
+    width:40vw;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding:40px 0px;
+    gap:0px;
+}
+button {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffddd2;
+    color:#003049;
+    font-size: 22px;
+    border: 1px solid #fefae0;
+    cursor: pointer;
+    margin: 0 auto;
+}
+h1{
+    color:#ff8fab;
+}
+p,h3{
+    font-size:24px;
+    background: none;
+    color:#ff8fab;
+    font-weight: 600;
+}
+span{
+    color:#14213d;
+    background: none;
+    font-weight: 400;
+}
+header,
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #14213d;
+    color: #ff8fab;
+    font-size: 20px;
+    margin: 0 auto;
+}
+@media(min-width:900px){
+    img{
+        width: 420px;
+    }
+    p,h3{
+        font-size:25px;
+    }
+}
+
+@media(max-width:640px){
+    header,
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    button{
+        left: 0px;
+        top:0px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+@media(max-width:440px){
+    img{
+        width:55vw;
+    }
+}
+
+@media(max-width:338px){
+    img{
+        width:72vw;
+    }
+    h1{
+        font-size: 9vw;
+    }
+    p,h3{
+        font-size:22px;
+    }
+}

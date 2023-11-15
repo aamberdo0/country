@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do10-991673528-Country Details</title>
+    <script src="index.js"></script>
+    <link href="./stylesheet/do10.css" rel="stylesheet">
+</head>
+<body id="index" onload="loadCountries();makeHeader();makeFooter();">
+    <header id="navigation"></header>
+    <div class="gridArea">
+        <section class="countrySelect">
+            <h2 class="title">Select a country</h2>
+            <select id="selectBox" onchange="showCountryInfo(this.value)" ></select>
+        </section>
+        <section id="country-info">
+            <h2 id="countryInformation">Country Information</h2>
+            <div id="showCountry">
+            </div>
+        </section>
+    </div>
+    <footer class="footer-index" id="footerDisplay"></footer>
+    <script type="text/javascript" src="./scripts/headerFooter.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+</body>
+</html>
